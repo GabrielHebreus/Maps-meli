@@ -84,3 +84,10 @@ function showPosition(position) {
   const marker = L.marker([latitude, longitude]).addTo(map);
   marker.bindPopup("Você está aqui!").openPopup();
 }
+//modo escuro
+const toggleThemeButton = document.querySelector("#dark-mode");
+const body = document.querySelector("body");
+
+toggleThemeButton.addEventListener("click", function () {
+  body.classList.toggle("dark-mode");
+});
