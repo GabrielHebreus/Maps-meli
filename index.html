@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Leaflet - Título Aqui</title>
+    <title>Título Aqui - Mapa Leaflet</title>
     <!-- Link para a biblioteca Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="">
-    <!-- Link para a biblioteca Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
     <!-- Link para o arquivo de estilo personalizado -->
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <section class="maps">
-        <h2></h2>
-        <div id="mapid" role="application" aria-label="Mapa interativo"></div>
-        <div class="button-container"> <!-- Botão para obter a localização atual do usuário -->
-            <button type="button" aria-label="Obter minha localização">Minha Localização</button>
+        <h1></h1> <!-- Título da página -->
+        <div id="mapid" role="application" aria-label="Mapa interativo" tabindex="0"></div> <!-- Adicionado tabindex para acessibilidade -->
+        <div class="button-container">
+            <button type="button" aria-label="Obter minha localização" id="get-location-button">Minha Localização</button> <!-- Adicionado ID e modificado o texto do botão -->
+            <button id="send-location-button">Enviar localização</button>
         </div>
     </section>
     
+    <!-- Link para a biblioteca Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     <!-- Link para o arquivo de script -->
     <script src="./script/main.js"></script>
 </body>
-</html>
-
+</html> 
 
