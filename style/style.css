@@ -74,7 +74,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   #mapid {
-    height: 85%;
+    height: 79%;
     max-width: 400px;
   }
 }
