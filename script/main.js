@@ -14,12 +14,12 @@ const streets = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 
 const traffic = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?foo=bar', {
   attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-  maxZoom: 18,
+  maxZoom: 19,
 });
 
 const pois = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?foo=poi', {
   attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-  maxZoom: 18,
+  maxZoom: 19,
 });
 
 // Adicionando camadas ao mapa
@@ -77,7 +77,6 @@ function getLocation() {
 function showPosition(position) {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
-
   map.setView([latitude, longitude], 16);
 
   // Adicionando marcador para a localização atual
@@ -91,3 +90,5 @@ const body = document.querySelector("body");
 toggleThemeButton.addEventListener("click", function () {
   body.classList.toggle("dark-mode");
 });
+
+

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa meli-beta</title>
+    <script src="https://kit.fontawesome.com/fd1b7e0aff.js" crossorigin="anonymous"></script>
     <!-- Link para a biblioteca Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -16,12 +17,10 @@
         <h1></h1> <!-- Título da página -->
         <div id="mapid" role="application" aria-label="Mapa interativo" tabindex="0"></div> <!-- Adicionado tabindex para acessibilidade -->
         <div class="button-container">
-            <button type="button" aria-label="Obter minha localização" id="get-location-button">Minha Localização</button> <!-- Adicionado ID e modificado o texto do botão -->
-            <button id="send-location-button">Enviar Localização</button>
-            <button id="dark-mode">Modo Escuro</button>
-        </div>
-        
-
+            <button data-text="Minha localização" type="button" aria-label="Obter minha localização" id="get-location-button"><i class="fa-solid fa-location-crosshairs"></i> </button> <!-- Adicionado ID e modificado o texto do botão -->
+            <button data-text="Enviar localização" id="send-location-button"><i class="fa-sharp fa-solid fa-location-arrow"></i></button>
+            <button data-text="Modo escuro" id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>    
     </section>
     
     <!-- Link para a biblioteca Leaflet JS -->
