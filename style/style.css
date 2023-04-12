@@ -124,18 +124,6 @@ body {
       padding: 0.7rem 1.2rem;
       /* Diminui o espaçamento interno */
     }
-
-    .button-container {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      top: 87%;
-    }
-
-    .button-container button {
-      width: 50px;
-      max-width: 100%;
-    }
   }
 }
 
