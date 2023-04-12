@@ -35,7 +35,7 @@ body {
   /* Faz com que os botões quebrem linha em telas menores */
   margin-top: 1rem;
   /* Adiciona um espaçamento superior */
-  bottom: 2%;
+  bottom: 8%;
   position: absolute;
   z-index: 1000;
 }
