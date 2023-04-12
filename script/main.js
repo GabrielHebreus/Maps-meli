@@ -69,7 +69,7 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, onLocationError);
   } else {
-    alert("Geolocation is not supported by this browser.");
+    alert("A geolocalização não é suportada por este navegador.");
   }
 }
 
